@@ -1,0 +1,172 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.section1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: no-repeat url('../img/bg_main_achakey_01.jpg');
+  background-size: cover;
+  transition: 0.5s;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+.menu a {
+  display: inline-block;
+  color: white;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textBox .content-title {
+  color: white;
+  font-size: 6em;
+  line-height: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content-subTitle {
+  color: white;
+  font-size: 2em;
+}
+
+.content-des {
+  color: #999;
+  font-size: 1em;
+}
+
+.content .imgBox {
+  width: 800px;
+  display: flex;
+  padding-right: 50px;
+}
+
+.content .imgBox img {
+  max-width: 600px;
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+
+.thumb li img {
+  width: 48px;
+  height: 48px;
+}
+
+
+
+.subMenu {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.subMenu li {
+  width: 120px;
+  height: 120px;
+  margin: 20px 0;
+}
+
+.subMenu li a {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.044rem;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: background 0.3s linear;
+}
+
+.subMenu li a span {
+  display: inline-block;
+  margin-top: 20px;
+  padding-top: 35px;
+  vertical-align: middle;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+.subMenu li:nth-child(1) a span {
+  background-image: url('../img/ico_nav_01.svg');
+}
+
+.subMenu li a strong {
+  display: block;
+  font-weight: 700;
+}
