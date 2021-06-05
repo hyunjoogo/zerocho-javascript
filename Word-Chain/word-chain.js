@@ -24,6 +24,13 @@ const checkWord = (event) => {
   event.preventDefault();
   NEWWORD = event.target[0].value;
   searchDict(NEWWORD);
+  // 뭘하고 싶은거지?
+  // 1. 저 함수에서 리턴되는 값(단어의 뜻)을 화면에 보여주고 싶어
+  // 그래서 let으로 지정하려고 했더니 let definition = searchDict(NEWWORD);
+  // undefined가 나옴
+  // 리턴값이 잘못되었거나 사용방법이 잘못됨
+  dict.textContent = NEWWORD;
+
   // const lastWordLast = LASTWORD.charAt(LASTWORD.length - 1);
   // const newWordFirst = NEWWORD.charAt(0);
   // if (lastWordLast === newWordFirst) {
@@ -104,5 +111,18 @@ const askPlayer = () => {
   RandomWord();
 }
 
-// askPlayer();
+askPlayer();
 form.addEventListener('submit', (event) => checkWord(event));
+
+/*
+rule : 3 OUT (3번 틀리면) 지는 방식 , 한번 성공하면 아웃카운터는 리셋됨
+1. 참가자수 묻기
+2. 제시어는 랜덤
+  - 제시어는 내가 직접 몇개 선정
+3. 입력한 값 확인 (틀릴 때마다 1OUT)
+  순서대로 확인하기
+  3.1 제시어의 끝말과 같은지 (끝말잇기잖아...)
+  3.2 기존에 입력한 단어인지 (한번했던건 안되게)
+  3.3 뜻이 없는 단어인지 (정의가 없다면 아웃)
+4. 승자 표시
+ */
