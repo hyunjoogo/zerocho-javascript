@@ -1,0 +1,48 @@
+
+
+
+
+
+
+
+
+
+
+
+<channel>
+    <title>표준 국어 대사전 개발 지원(Open API) - 사전  검색</title>
+    <link>https://stdict.korean.go.kr</link>
+    <description>표준 국어 대사전 개발 지원(Open API) – 사전 검색 결과</description>
+    <lastBuildDate>20210525163112</lastBuildDate>
+    <total>1</total>
+    <start>1</start>
+    <num>10</num>
+
+    <item>
+        <target_code>134380</target_code>
+        <word><![CDATA[발-바닥]]></word>
+        <sup_no>0</sup_no>
+
+
+
+
+        <pos>명사</pos>
+        <sense>
+            <definition><![CDATA[발 아래쪽의, 땅을 밟는 평평한 부분.]]></definition>
+            <link><![CDATA[https://stdict.korean.go.kr/search/searchView.do?word_no=134380&searchKeywordTo=3]]></link>
+            <type>
+
+                일반어
+
+
+
+
+            </type>
+        </sense>
+
+
+
+
+    </item>
+
+</channel>

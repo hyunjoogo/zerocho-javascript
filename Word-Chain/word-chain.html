@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <script src="word-chain.js" defer></script>
-  <title>끝말잇기</title>
+	<meta charset="UTF-8">
+	<script type="module" src="word-chain.js" defer></script>
+	<title>끝말잇기</title>
 </head>
 <body>
 <section>
-  <h1>1번째 참가자</h1>
-  <h2>
-    <span>제시어 : </span>
-    <span class="prompt"></span>
-  </h2>
-  <form action="#">
-      <input type="text"/>
-    <button type="submit" name="입력">입력</button>
-  </form>
-  <h3 class="player"></h3>
+	<h1><span class="nowPlayer"></span>번째 참가자</h1>
+	<h2>
+		<span>제시어 : </span>
+		<span class="prompt"></span>
+	</h2>
+	<form action="#">
+		<input type="text"/>
+		<button type="submit" name="입력">입력</button>
+	</form>
+	<h3 class="player"></h3>
+	<h3 class="dict"></h3>
 </section>
 </body>
 </html>

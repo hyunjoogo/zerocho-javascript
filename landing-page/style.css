@@ -68,11 +68,10 @@ header ul {
 }
 
 .content .textBox .content-title {
-  color: white;
-  font-size: 6em;
-  line-height: 0.8em;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 8.33333vw;
+  line-height: 7.29166vw;
+  letter-spacing: -0.33333vw;
+  color: #fff;
 }
 
 .content-subTitle {
@@ -81,8 +80,10 @@ header ul {
 }
 
 .content-des {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
   color: #999;
-  font-size: 1em;
+  letter-spacing: 0;
 }
 
 .content .imgBox {
